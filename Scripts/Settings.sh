@@ -23,7 +23,7 @@ echo "CONFIG_PACKAGE_luci=y" >> ./.config
 echo "CONFIG_LUCI_LANG_zh_Hans=y" >> ./.config
 #echo "CONFIG_PACKAGE_luci-theme-$WRT_THEME=y" >> ./.config
 #echo "CONFIG_PACKAGE_luci-app-$WRT_THEME-config=y" >> ./.config
-
+echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >> "feeds.conf.default"
 #手动调整的插件
 if [ -n "$WRT_PACKAGE" ]; then
 	echo "$WRT_PACKAGE" >> ./.config
